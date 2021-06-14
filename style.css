@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main-section {
+    background-image: url("img/natural-landscape.jpg");
+    background-color: antiquewhite;
+    width: 100%;
+    height: 59rem;
+    animation: bg-color 5s infinite;
+    z-index: 1;
+}
+.bird {
+    position: relative;
+    width: 20%;
+    left: 100%;
+    animation: fly 5s infinite;  
+}
+
+
+@keyframes bg-color {
+    0% {background-color: #666fff;}
+    25% {background-color: rgb(142, 146, 248);}
+    50% {background-color: hsl(236, 76%, 72%);}
+    75% {background-color: #5b5f99;}
+    100% {background-color: hsl(236, 33%, 28%);}
+}
+@keyframes fly {
+    0% { 
+        left: -70%;
+        top: 5px;
+    } 
+    25% { 
+        left: 150px;
+    } 
+    50% { 
+       
+        top: 70px;
+    } 
+    50% { 
+       
+        top: 60px;
+    } 
+    75% { 
+       
+        top: 25px;
+    } 
+    100% { 
+        right: -100%;
+        top: 105px;
+       
+    } 
+}
+
